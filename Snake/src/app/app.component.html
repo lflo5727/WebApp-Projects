@@ -1,0 +1,12 @@
+<div class = "container">
+	<div class = "header">
+		<h2>Web Lab - Snake</h2>
+	</div>
+	<div class = "start" (click) = "begin_game()">
+		Click to Start
+	</div>
+	<div class = "row" *ngFor = "let col of board; let i = index;">
+		<div class = "col" [ngStyle] = "{'background-color': snake_location (i, j)}" *ngFor = "let row of col; let j = index"></div>
+	</div>
+</div>
+

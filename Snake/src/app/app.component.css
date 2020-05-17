@@ -1,0 +1,30 @@
+.container {
+	width: 520px;
+	display: block;
+	margin: auto;
+	background-color: #1e3e73;
+}
+
+.header {
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+
+.row {
+	height: 26px;
+}
+
+.col {
+	height: 26px;
+	width: 26px;
+	display: inline-block;
+}
+
+.start {
+	text-align: center;
+	background-color: #516078;
+	color: white;
+	padding: 2%;
+}
+

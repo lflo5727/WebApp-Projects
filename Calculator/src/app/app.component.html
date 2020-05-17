@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  // 1. write Typescript code in "app.component.ts" to work with calculator
+</head>
+<body>
+
+<table align="center">
+
+  <tr>
+	<td><button (click)="keyPress('1')" >1</button></td>
+    <td><button (click)="keyPress('2')" >2</button></td>
+    <td><button (click)="keyPress('3')" >3</button></td>
+    <td><button (click)="keyPress('/')" >/</button></td>
+  </tr>
+  <br>
+  <tr>
+    <td><button (click)="keyPress('4')">4</button></td>
+    <td><button (click)="keyPress('5')" >5</button></td>
+    <td><button (click)="keyPress('6')" >6</button></td>
+    <td><button (click)="keyPress('*')" >*</button></td>
+  </tr>
+  <br>
+  <tr>
+    <td><button (click)="keyPress('7')" >7</button></td>
+    <td><button (click)="keyPress('8')" >8</button></td>
+    <td><button (click)="keyPress('9')" >9</button></td>
+    <td><button (click)="keyPress('+')" >+</button></td>
+  </tr>
+  <br>
+  <tr>
+    <td><button (click)="keyPress('0')" >0</button></td>
+    <td><button (click)="keyPress('-')" >-</button></td>
+    <td><button (click)="solveEq()" >=</button></td>
+  </tr>
+<br>
+  <tr>
+    <td><button (click)="clearM()" >AC</button></td>
+  </tr>
+</table>
+<div class="maindisplay" style = "text-align: center">
+  <div class="subdisplay" style = "text-align: center">{{ subText }}</div>
+  {{ mainText }}
+</div>
+
+</body>
+</html>
